@@ -1,7 +1,7 @@
-app:
-  build:
-    base: [nodejs@14]
-    build:
-      - npm i
-      - npm run build
-    deploy: ['build/~']
+use: [nodejs@14]
+
+run:
+  - npm i
+  - npm run build
+
+deploy: ["build/*"]
